@@ -2,6 +2,7 @@ import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from "./DarkMode";
 import { FaCaretDown } from "react-icons/fa6";
+import logo from "../../assets/Logo/logo.png";
 const Menu = [
   {
     id: 1,
@@ -41,7 +42,6 @@ const DropdownLink = [
     name: "Best selling",
     link: "/#",
   },
-
   {
     id: 3,
     name: "Top Rate",
@@ -56,13 +56,12 @@ const Navbar = () => {
       <div className="bg-primary/40 py-2">
         <div className="container flex justify-between items-center">
           <div>
-            <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-              <img
-                src="https://shopsy-tcj.netlify.app/assets/logo-Jm4BVSCI.png"
-                alt="logo"
-                className="w-10 uppercase"
-              />
-              shopsy
+            <a
+              href="#"
+              className="font-thin text-2xl sm:text-3xl flex gap-2 items-center font-serif"
+            >
+              <img src={logo} alt="logo" className="w-14 uppercase" />
+              Rina
             </a>
           </div>
           {/* search bar*/}
